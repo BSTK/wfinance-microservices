@@ -1,6 +1,6 @@
 package dev.bstk.wfinance.core.seguranca;
 
-import dev.bstk.wfinance.usuario.domain.UsuarioService;
+import dev.bstk.wfinance.core.seguranca.usuario.domain.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

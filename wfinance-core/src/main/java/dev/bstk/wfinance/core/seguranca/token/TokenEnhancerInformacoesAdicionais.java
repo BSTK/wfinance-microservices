@@ -1,6 +1,6 @@
 package dev.bstk.wfinance.core.seguranca.token;
 
-import dev.bstk.wfinance.usuario.domain.UsuarioSistema;
+import dev.bstk.wfinance.core.seguranca.usuario.domain.UsuarioSistema;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
