@@ -1,6 +1,6 @@
 package dev.bstk.wfinance.lancamento.api.resource;
 
-import dev.bstk.wfinance.core.evento.NovoRecursoCriadoEvento;
+import dev.bstk.wfinance.core.eventos.NovoRecursoCriadoEvento;
 import dev.bstk.wfinance.lancamento.api.request.AtualizarLancamentoRequest;
 import dev.bstk.wfinance.lancamento.api.request.LancamentoFiltroRequest;
 import dev.bstk.wfinance.lancamento.api.request.NovoLancamentoRequest;
