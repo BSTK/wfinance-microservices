@@ -1,5 +1,6 @@
 package dev.bstk.wfinance.core.email;
 
+import dev.bstk.wfinance.core.exception.EmailException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;

@@ -1,4 +1,4 @@
-package dev.bstk.wfinance.core.email;
+package dev.bstk.wfinance.core.exception;
 
 public class EmailException extends RuntimeException {
 
