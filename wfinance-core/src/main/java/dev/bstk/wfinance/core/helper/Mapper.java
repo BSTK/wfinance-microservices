@@ -1,4 +1,4 @@
-package dev.bstk.wfinance.core;
+package dev.bstk.wfinance.core.helper;
 
 import org.modelmapper.ModelMapper;
 
