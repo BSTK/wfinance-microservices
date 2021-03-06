@@ -13,7 +13,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
@@ -42,7 +41,6 @@ public class CategoriaResource {
     }
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')")
     public ResponseEntity<Page<CategoriaResponse>> categorias(@RequestParam(value = "nome", defaultValue = "", required = false)
                                                               final String nome,
                                                               final Pageable pageable) {
@@ -53,7 +51,6 @@ public class CategoriaResource {
     }
 
     @GetMapping("/resumo")
-    @PreAuthorize("hasRole('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')")
     public ResponseEntity<List<CategoriaResumoResponse>> categorias() {
         final var categorias = categoriaRepository.findAll();
         final var categoriasResponse = resumo(categorias);
@@ -61,7 +58,6 @@ public class CategoriaResource {
     }
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasAuthority('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')")
     public ResponseEntity<CategoriaResponse> categoriaPorId(@PathVariable("id") final Long id) {
         final Optional<Categoria> categoriaPorId = categoriaRepository.findById(id);
 
@@ -76,7 +72,6 @@ public class CategoriaResource {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    @PreAuthorize("hasAuthority('ROLE_CADASTRAR_CATEGORIA') and #oauth2.hasScope('write')")
     public ResponseEntity<CategoriaResponse> novaCategoria(@RequestBody @Valid final NovaCategoriaRequest request,
                                                            final HttpServletResponse httpServletResponse) {
         final var categoriaSalva = categoriaService.novaCategoria(request);
@@ -90,7 +85,6 @@ public class CategoriaResource {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasRole('ROLE_REMOVER_CATEGORIA') and #oauth2.hasScope('write')")
     public ResponseEntity<Void> excluir(@PathVariable("id") final Long categoriaId) {
         categoriaService.excluir(categoriaId);
         return ResponseEntity.noContent().build();
