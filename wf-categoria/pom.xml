@@ -13,7 +13,7 @@
 
     <groupId>dev.bstk.wfinance</groupId>
     <artifactId>wf-categoria</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>wf-categoria</name>
 
     <properties>
