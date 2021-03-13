@@ -11,6 +11,7 @@
 
     <modules>
         <module>wf-categoria</module>
+        <module>wf-fornecedor</module>
     </modules>
 
 </project>
