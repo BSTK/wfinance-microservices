@@ -13,45 +13,4 @@
         <module>wf-categoria</module>
     </modules>
 
-    <properties>
-        <java.version>11</java.version>
-        <lombok.version>1.18.16</lombok.version>
-        <modelmapper.version>2.3.0</modelmapper.version>
-        <commons-lan3.version>3.12.0</commons-lan3.version>
-        <commons-collections.version>4.4</commons-collections.version>
-    </properties>
-
-    <dependencies>
-
-        <!-- Lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Commons Lang 3 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lan3.version}</version>
-        </dependency>
-
-        <!-- Commons Collections 4 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-            <version>${commons-collections.version}</version>
-        </dependency>
-
-        <!-- Model Mapper -->
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>${modelmapper.version}</version>
-        </dependency>
-
-    </dependencies>
-
 </project>

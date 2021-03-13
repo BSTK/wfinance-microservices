@@ -1,4 +1,4 @@
-package dev.bstk.wfinance.wfcategoria;
+package dev.bstk.wfinance.categoria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
